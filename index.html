@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=10.0">
+        <title>Progetto Script JavaScript</title>
+        <!-- Script esterno con defer, eseguito dopo aver caricato la pagina -->
+        <script defer src="js/main.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Benvenuti nella nostra pagina interattiva!</h1>
+        </header>
+
+        <main>
+            <p>Qui vediamo delle funzionalità dinamiche implementate con JavaScript</p>
+            <!-- Div per contenuto aggiunto dinamicamente dallo script -->
+            <div id="dynamic-content"></div>
+        </main>
+
+        <footer>
+            <p>Footer della pagina</p>
+        </footer>
+
+        <!-- Messaggio per i browser senza javascript abilitato -->
+        <noscript>
+            <p>Per una completa esperienza di questa pagina, per favore abilita javscript</p>
+        </noscript>
+
+        <!-- Script asincroni per funzionalità aggiuntive -->
+        <!-- Non blocca il rendering e non è garantito che sai eseguito nell'ordine in cui sono stati dichiarati -->
+        <script async src="js/feature1.js"></script>
+        <script async src="js/feature2.js"></script>
+
+        <!-- Script alla fine del body per non bloccare il rendering della pagina -->
+        <script src="js/inline-script.js"></script>
+    </body>
+</html>
